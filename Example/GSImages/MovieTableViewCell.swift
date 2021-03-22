@@ -7,7 +7,6 @@ public class MovieTableViewCell: UITableViewCell {
     private var title: UILabel!
     private var subtitle: UILabel!
     private var poster: UIImageView!
-//    private var cancellable: AnyCancellable?
     private var animator: UIViewPropertyAnimator?
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -77,15 +76,6 @@ public class MovieTableViewCell: UITableViewCell {
             })
         }
     }
-
-//    private func loadImage(for movie: Movie) -> AnyPublisher<UIImage?, Never> {
-//        return Just(movie.poster)
-//        .flatMap({ poster -> AnyPublisher<UIImage?, Never> in
-//            let url = URL(string: movie.poster)!
-//            return ImageLoader.shared.loadImage(from: url)
-//        })
-//        .eraseToAnyPublisher()
-//    }
 
     private func setupUI() {
         let stackView = UIStackView()

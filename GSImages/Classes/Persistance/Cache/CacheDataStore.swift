@@ -19,6 +19,7 @@ final class CacheDataStore: DataStore {
         ) // 100 MB
     }
     
+    // MARK: - Properties
     private let queue = DispatchQueue(label: "com.942v.GSImages.cachedatastore", attributes: .concurrent)
     private let configuration: Configuration
     
@@ -36,6 +37,7 @@ final class CacheDataStore: DataStore {
         )
     }()
     
+    // MARK: - Methods
     init(
         configuration: Configuration = Configuration.defaultConfig
     ) {
