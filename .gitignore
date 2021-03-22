@@ -1,7 +1,6 @@
-# OS X
-.DS_Store
-
 # Xcode
+#ProAtomic
+.DS_Store
 build/
 *.pbxuser
 !default.pbxuser
@@ -11,27 +10,34 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
-*.xccheckout
+*.xcodeproj/xcuserdata/
+*.xcworkspace/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+xcuserstate
+*.xcuserdatad/
 profile
 *.moved-aside
 DerivedData
-*.hmap
-*.ipa
+.idea/
 
-# Bundler
-.bundle
+Pods/
+Podfile.lock
 
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+# fastlane specific
+**/fastlane/report.xml
 
-Carthage/Build
+# deliver temporary files
+**/fastlane/Preview.html
 
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
-# Note: if you ignore the Pods directory, make sure to uncomment
-# `pod install` in .travis.yml
-#
-# Pods/
+# snapshot generated screenshots
+**/fastlane/screenshots
+
+# scan temporary files
+**/fastlane/test_output
+
+#  compilation files
+**/fastlane/compilation/
+
+# fastlane .env
+**/fastlane/.env
